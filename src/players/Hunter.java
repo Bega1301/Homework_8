@@ -13,7 +13,9 @@ public class Hunter extends Hero {
             for (int i = 0; i <heroes.length ; i++) {
                 if (heroes [i].getAbility().equals(Ability.CRITICAL_DAMAGE) && heroes[i].getHealth()>0) {
                     Random r= new Random();
-                    int randomNumber= r.nextInt(4);
+                    int low=2;
+                    int high=4;
+                    int randomNumber= r.nextInt(high-low)+low;
 
                     heroes[i].setDamage(boss.getHealth()-(heroes[i].getDamage()*randomNumber));
 
