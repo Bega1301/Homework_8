@@ -92,7 +92,10 @@ public class RPG_Game {
         Medic medic = new Medic(100, 10);
         Hunter hunter = new Hunter(100, 10);
         Magic magic = new Magic(100, 10);
-        Hero[] heroes = new Hero[]{warrior, medic, hunter, magic};
+        Thor thor= new Thor(100,10);
+        Golem golem = new Golem(400,2);
+        Hero[] heroes = new Hero[]{warrior, medic, hunter, magic, thor, golem};
+
         return heroes;
     }
 }
