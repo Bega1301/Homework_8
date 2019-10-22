@@ -11,7 +11,7 @@ public class Golem extends Hero  {
             for (int i = 0; i <heroes.length ; i++) {
                 if (heroes [i].getAbility().equals(Ability.PARTLY_PROTECTING_FROM_BOSS) &&
                         heroes[i].getHealth()>=0 && boss.getHealth()>=0) {
-                    boss.setDamage(boss.getDamage()/heroes [i].getHealth() );
+                    boss.setDamage(boss.getDamage()/heroes [i].getHealth());
 
                 }
             }
